@@ -11,6 +11,10 @@ $(document).ready(function(){
     location.reload();
   });
 
+  $(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow"); 
+	});
+
 
     /* swiper slider */
     var swiper = new Swiper(".main_slide", {
