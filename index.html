@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERA</title>
+  <!-- jquery min -->
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <!-- reset cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <!-- flickity-slider -->
+  <link rel="stylesheet" href="./css/flickity.min.css" media="screen">
+  <script src="./js/flickity.pkgd.min.js"></script>
+  <!-- aos ani -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- user -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <!-- nav bg area -->
+  <div class="out"></div>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">HERA</a>
+      <div class="menuGroup">
+        <ul class="nav">
+          <li><a href="#">메이크업</a>
+            <ul>
+              <li><a href="#">페이스</a>
+                <ul>
+                  <li><a href="#">제품 전체</a></li>
+                  <li><a href="#">파운데이션</a></li>
+                  <li><a href="#">쿠션</a></li>
+                  <li><a href="#">베이스/프라이머</a></li>
+                  <li><a href="#">파우더/픽서</a></li>
+                  <li><a href="#">블러셔/하이라이터</a></li>
+                  <li><a href="#">컨실러</a></li>
+                </ul>
+              </li>
+              <li><a href="#">립</a>
+                <ul>
+                  <li><a href="#">제품 전체</a></li>
+                  <li><a href="#">립스틱</a></li>
+                  <li><a href="#">틴트</a></li>
+                  <li><a href="#">립 밤/글로스</a></li>
+                  <li><a href="#">립앤치크</a></li>
+                </ul>
+              </li>
+              <li><a href="#">아이</a>
+                <ul>
+                  <li><a href="#">제품 전체</a></li>
+                  <li><a href="#">아이섀도</a></li>
+                  <li><a href="#">마스카라</a></li>
+                  <li><a href="#">아이브로우</a></li>
+                  <li><a href="#">아이라이너</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navWrap">
+              <div class="top"></div>
+              <div class="bottom"></div>
+            </div>
+          </li>
+          <li><a href="#">스킨케어</a>
+            <ul>
+              <li><a href="#">라인별</a>
+                <ul>
+                  <li><a href="#">클렌징</a></li>
+                  <li><a href="#">시그니아</a></li>
+                  <li><a href="#">에이지 어웨이</a></li>
+                  <li><a href="#">하이드로 리플렉팅</a></li>
+                  <li><a href="#">하이드로-듀 플럼핑</a></li>
+                  <li><a href="#">옴므</a></li>
+                  <li><a href="#">UV프로텍터</a></li>
+                  <li><a href="#">컴피</a></li>
+                </ul>
+              </li>
+              <li><a href="#">유형별</a>
+                <ul>
+                  <li><a href="#">클렌저</a></li>
+                  <li><a href="#">토너/워터</a></li>
+                  <li><a href="#">에멀젼</a></li>
+                  <li><a href="#">세럼/앰플</a></li>
+                  <li><a href="#">아이 케어</a></li>
+                  <li><a href="#">크림</a></li>
+                  <li><a href="#">UV 프로텍션</a></li>
+                </ul>
+              </li>
+              <li><a href="#">피부 고민</a>
+                <ul>
+                  <li><a href="#">수분/보습</a></li>
+                  <li><a href="#">브라이트닝</a></li>
+                  <li><a href="#">피부보호/차단</a></li>
+                  <li><a href="#">안티에이징</a></li>
+                  <li><a href="#">프리미엄 안티에이징</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navWrap">
+              <div class="top"></div>
+              <div class="bottom"></div>
+            </div>
+          </li>
+          <li><a href="#">헤라 스토리</a>
+            <ul>
+              <li><a href="#">브랜드 소개</a></li>
+              <li><a href="#">헤라 크루</a>
+                <ul>
+                  <li><a href="#">A크루</a></li>
+                  <li><a href="#">C크루</a></li>
+                </ul>
+              </li>
+              <li><a href="#">캠페인 라이브러리</a></li>
+            </ul>
+            <div class="navWrap">
+              <div class="top"></div>
+              <div class="bottom"></div>
+            </div>
+          </li>
+          <li><a href="#">프래그런스</a>
+            <ul>
+              <li><a href="#">제품 라인</a>
+                <ul>
+                  <li><a href="#">제품 전체</a></li>
+                  <li><a href="#">지일</a></li>
+                  <li><a href="#">벨벳 나이트</a></li>
+                </ul>
+              </li>
+              <li><a href="#">제품 유형</a>
+                <ul>
+                  <li><a href="#">제품 전체</a></li>
+                  <li><a href="#">향수</a></li>
+                  <li><a href="#">바디</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navWrap">
+              <div class="top"></div>
+              <div class="bottom"></div>
+            </div>
+          </li>
+          <li><a href="#">이벤트</a>
+            <ul>
+              <li><a href="#">진행중인 이벤트</a></li>
+              <li><a href="#">지난 이벤트</a></li>
+            </ul>
+            <div class="navWrap">
+              <div class="top"></div>
+              <div class="bottom"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="utill">
+          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- mainVisualBanner -->
+  <section class="mainVisualBanner">
+    <div class="controls">
+      <span class="prev"><i data-feather="chevron-left"></i></span>
+      <div class="pager"></div>
+      <span class="next"><i data-feather="chevron-right"></i></span>
+    </div>    
+    <div class="main_slide swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <a href="#">
+            <div class="left">
+              <div class="mainText">
+                <p>
+                  ROUGE CLASSY<br>
+                  <span>seoul red</span>
+                </p>
+              </div>
+              <img src="./images/ROUGE CLASSY_preview.jpg" alt="">
+            </div>
+            <div class="right"><img src="./images/ROUGE CLASSY_Product_image.jpg" alt=""></div>
+          </a>
+        </li> 
+        <li class="swiper-slide">
+          <a href="#">
+            <div class="left">
+              <div class="mainText white">
+                <p>
+                  GLOW LASTING<br>FOUNDATION<br>
+                </p>
+                <span>윤곽을 타고 흐르는 수분빛 글로우</span>
+              </div>
+              <img src="./images/GLOW FLOWS IN YOU_preview.jpg" alt="">
+            </div>
+            <div class="right"><img src="./images/GLOW FLOWS IN YOU_Product_image.jpg" alt=""></div>
+          </a>
+        </li> 
+        <li class="swiper-slide">
+          <a href="#">
+            <div class="left">
+              <div class="mainText white">
+                <p>
+                  BLACK CUSHION<br>FOUNDATION
+                </p>
+                <span>하루의 끝까지 자유로운 소프트 새틴 스킨</span>
+              </div>
+              <img src="./images/BLACK CUSHION FOUNDATION-preview.png" alt="">
+            </div>
+            <div class="right"><img src="./images/BLACK CUSHION FOUNDATION_Product_image.png" alt=""></div>
+          </a>
+        </li> 
+        <li class="swiper-slide">
+          <a href="#">
+            <div class="center">
+              <div class="mainText">
+                <p>
+                  HERA NEW blush
+                </p>
+                <span>물 들이듯 표현되는 투명한 습식 블러쉬</span>
+              </div>
+              <img src="./images/hera blush.jpg" alt="">
+            </div>
+          </a>
+        </li> 
+      </ul>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- promotion -->
+  <section class="promotion conA">
+    <div class="inner">
+      <div class="photo Model">
+        <a href="#">
+          <img src="./images/센슈얼 파우더 매트 립_모델.png" alt="">
+        </a>
+        <div class="text">
+          <h2>SENSUAL<br>POWDER MATTE<br>LIQUID</h2>
+          <p>한 번의 터치로 각질 부각 없이<br>풍부한 컬러로 감싸주는 편안한 소프트 벨벳 틴트</p>
+        </div>
+      </div>
+      <div class="photo product">
+        <a href="#">
+          <img src="./images/센슈얼 파우더 매트 립_제품이미지.jpg" alt="">
+        </a>
+        <img class="curcle" src="./images/best_curcle.png" alt="">
+        <img class="curcle_in" src="./images/curcle_in.svg" alt="">
+      </div>
+      <div class="photo colorList">
+        <div class="text">
+          <h2>
+            2024 SPRING <br>
+            NEW COLORS
+          </h2>
+        </div>
+        <div class="colors">
+          <img src="./images/센슈얼 파우더 매트 리퀴드_얼그레이.jpg" alt="">
+          <h4>#426 EARL GREY</h4>
+          <p>얼그레이에서 영감을 받은
+            차분한 로지 베이지 컬러</p>
+        </div>
+        <div class="colors">
+          <img src="./images/센슈얼 파우더 매트 리퀴드_피치시크.jpg" alt="">
+          <h4>#213 PEACH CHIC</h4>
+          <p>베이스로도 단독으로도
+            둘 다 사용 가능한 밀키 피치 컬러</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="promotion conB">
+    <div class="inner">
+      <div class="photo Model">
+        <a href="#">
+          <img src="./images/실키 스테이_모델.png" alt="">
+        </a>
+        <div class="text">
+          <h2>SILKY STAY 24H<br>
+            LONGWEAR<br>
+            SPF 20/ PA++</h2>
+          <p>한 번의 터치로 각질 부각 없이<br>풍부한 컬러로 감싸주는 편안한 소프트 벨벳 틴트</p>
+        </div>
+      </div>
+      <div class="photo product">
+        <a href="#">
+          <img src="./images/실키 스테이_제품이미지.png" alt="">
+        </a>
+        <img class="curcle" src="./images/best_curcle.png" alt="">
+        <img class="curcle_in" src="./images/curcle_in.svg" alt="">
+        <div class="text">
+          <h2>STAY SILKY,<br>STAY BE MYSELF</h2>
+          <p>아침에도, 오후에도, 저녁까지 처음 바른 예쁜 결이 그대로 지속되는 
+            시간을 읽을 수 없는 예쁜 피부의 비결.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- best item -->
+  <section class="bestItem">
+    <div class="bg"></div>
+    <div class="container">
+      <h2>BEST</h2>
+      <ul class="Item">
+        <li>
+          <a href="#">
+            <img src="./images/best_1.png" alt="">
+            <div class="plusBtn">+</div>
+            <div class="hidenText">
+              <div class="text">
+                <h3>센슈얼 파우더 매트 리퀴드
+                </h3>
+                <p>
+                  한 번의 터치로 각질 부각 없이 풍부한 컬러로 감싸주는 편안한 소프트 벨벳 틴트
+                </p>
+                <span class="goto">자세히 보기</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/best_2.png" alt="">
+            <div class="plusBtn">+</div>
+            <div class="hidenText">
+              <div class="text">
+                <h3>실키 스테이 24H 롱웨어 파운데이션 SPF 20 / PA++</h3>
+                <p>
+                  처음 바른 그대로 매끈한 실키 스킨을 연출해주는 파운데이션
+                </p>
+                <span class="goto">자세히 보기</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/best_3.png" alt="">
+            <div class="plusBtn">+</div>
+            <div class="hidenText">
+              <div class="text">
+                <h3>UV프로텍터 톤업 SPF50+ / PA++++</h3>
+                <p>
+                  빛나는 피부 표현의 시작 - 확실한 피부 보호 기능의 생기 톤업 선크림
+                </p>
+                <span class="goto">자세히 보기</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- new item -->
+  <section class="newItem">
+    <div class="container">
+      <h2 class="mainTitle">NEW</h2>
+      <p class="subTitle">COMFY REVITALIZING SERUM MIST</p>
+      <div class="videoArea">
+        <video loop autoplay muted>
+          <source src="./images/newItem.mp4"></source>
+        </video>
+        <div class="hidenArea">
+          <div class="text">
+            <p class="mainText">사용자가 만족하는<br> ‘컴피 리바이탈라이징 세럼 미스트’</p>
+            <ul class="review">
+              <li>사용 후, 피부에 활력이 느껴진다<span>98%</span></li>
+              <li>사용 후, 피부 컨디션이 부스팅 된 느낌이 든다<span>96%</span></li>
+              <li>사용 후, 피부에 광채가 느껴진다<span>96%</span></li>
+              <li>8시간 후, 시간이 지나도 속당김이 느껴지지 않는다<span>96%</span></li>
+            </ul>
+            <span class="footnote">* 만 25~39세 여성 31명 대상 만족도 설문 결과, 2023.10.10~2023.10.17 (주) 피엔케이피부임상연구센터</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="viewMore">
+      <div class="container">
+        <div class="imgArea"><img src="./images/new_miniimg.png" alt=""></div>
+        <div class="text">
+          <p>컴피 리바이탈라이징 세럼 미스트</p>
+          <span>COMFY REVITALIZING SERUM MIST</span>
+        </div>
+        <div class="btnArea">
+          <a href="#">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+    <img class="deco img1" src="./images/new_deco_img1.png" alt="">
+    <img class="deco img2" src="./images/new_deco_img2.png" alt="">
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="top">
+        <a class="logo" href="#">HERA</a>
+        <ul class="nav">
+          <li><a href="#">서비스이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">영상정보처리방침</a></li>
+          <li><a href="#">뷰티포인트</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <p>
+          고객상담팀(수신자요금부담) 080-023-5454<br>
+          (상담시간 월~금 : AM 09:00 ~ PM 06:00)
+        </p>
+        <small>© AMOREPACIFIC CORPORATION. All rights reserved.</small>
+      </div>
+      <div class="sns">
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
